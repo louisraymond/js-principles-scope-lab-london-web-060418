@@ -4,9 +4,13 @@ var customerName="bob";
 
 function upperCaseCustomerName(){ return customerName= customerName.toUpperCase();}
 
-function setBestCustomer(){bestCustomer='not bob';}
+const setBestCustomer = () => {
+    bestCustomer = 'not bob'
+}
 
-function overwriteBestCustomer(){ bestCustomer='maybe bob'; return bestCustomer}
+const overwriteBestCustomer = () => {
+  bestCustomer = 'maybe bob'
+}
 
 
 const leastFavoeCustomer="dave"
