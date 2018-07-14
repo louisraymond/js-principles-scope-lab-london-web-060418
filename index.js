@@ -1,30 +1,24 @@
 // Write your solution in this file!
 
-var customerName="bob";
-
-function upperCaseCustomerName(){ return customerName= customerName.toUpperCase();}
-
-function setBestCustomer(){bestCustomer='not bob';}
-
-function overwriteBestCustomer(){ bestCustomer='maybe bob'; return bestCustomer}
-
-
-const leastFavoeCustomer="dave"
-
-function overwriteBestCustomer(){leastFavoriteCustomer="paul"}
-
 
 var customerName = 'bob'
+const leastFavoriteCustomer = 'some initial value'
 
-const upperCaseCustomerName (){ customerName = customerName.toUpperCase()}
+function upperCaseCustomerName() {
+  customerName = customerName.toUpperCase()
+  
+  //notice that there is no return statement
+  //if you try to use `return customerName.toUpperCase()`, it will return 'BOB', but will not redefine the variable!
+}
 
+function setBestCustomer() {
+  bestCustomer = 'not bob'
+}
 
-const setBestCustomer = () => {bestCustomer = 'not bob'}
+function overwriteBestCustomer() {
+  bestCustomer = 'maybe bob'
+}
 
-const overwriteBestCustomer = ()  { bestCustomer = 'maybe bob'}
-
-
-const leastFavoriteCustomer = "Tom"
-
-
-const changeLeastFavoriteCustomer = () =>{leastFavoriteCustomer = "tim"}
+function changeLeastFavoriteCustomer() {
+  leastFavoriteCustomer = 'billy'
+}
